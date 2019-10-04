@@ -64,15 +64,15 @@ public class MainActivity extends AppCompatActivity {
         singptime( SingpTime );
         nytime( Newtime );
         twhr(sydtime);
-        twhr(TokyTime);
-        twhr(LondTime);
-        twhr(Newtime);
-        twhr(SingpTime);
-        tlhr(sydtime);
-        tlhr(TokyTime);
-        tlhr(LondTime);
-        tlhr(Newtime);
-        tlhr(SingpTime);
+//        twhr(TokyTime);
+//        twhr(LondTime);
+//        twhr(Newtime);
+//        twhr(SingpTime);
+//        tlhr(sydtime);
+//        tlhr(TokyTime);
+//        tlhr(LondTime);
+//        tlhr(Newtime);
+//        tlhr(SingpTime);
 
     }
 
@@ -110,15 +110,15 @@ public class MainActivity extends AppCompatActivity {
 
         try{
          String sydtime = date24Format.format(date12Format.parse( time ));
-         String Toktime= date24Format.format(date12Format.parse( time ));
-         String londtime= date24Format.format(date12Format.parse( time ));
-         String nytime= date24Format.format(date12Format.parse( time ));
-         String singtime= date24Format.format(date12Format.parse( time ));
+//         String Toktime= date24Format.format(date12Format.parse( time ));
+//         String londtime= date24Format.format(date12Format.parse( time ));
+//         String nytime= date24Format.format(date12Format.parse( time ));
+//         String singtime= date24Format.format(date12Format.parse( time ));
             sydntime(sydtime);
-            tokytime(Toktime);
-            londtime(londtime);
-            singptime(singtime);
-            nytime(nytime);
+//            tokytime(Toktime);
+//            londtime(londtime);
+//            singptime(singtime);
+//            nytime(nytime);
         } catch (Exception e){
             e.printStackTrace();
 
@@ -126,27 +126,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 //    12 hour
-    private void tlhr(String time){
-        SimpleDateFormat date12Format = new SimpleDateFormat("hh:mm a");
-
-        SimpleDateFormat date24Format = new SimpleDateFormat("HH:mm");
-
-        try{
-            String sydtime= date12Format.format(date24Format.parse(time));
-            String Toktime= date12Format.format(date24Format.parse(time));
-            String londtime= date12Format.format(date24Format.parse(time));
-            String nytime= date12Format.format(date24Format.parse(time));
-            String singtime= date12Format.format(date24Format.parse(time));
-
-            sydntime(sydtime);
-            tokytime(Toktime);
-            londtime(londtime);
-            singptime(singtime);
-            nytime(nytime);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-    }
+//    private void tlhr(String time){
+//        SimpleDateFormat date12Format = new SimpleDateFormat("hh:mm a");
+//
+//        SimpleDateFormat date24Format = new SimpleDateFormat("HH:mm");
+//
+//        try{
+//            String sydtime= date12Format.format(date24Format.parse(time));
+//            String Toktime= date12Format.format(date24Format.parse(time));
+//            String londtime= date12Format.format(date24Format.parse(time));
+//            String nytime= date12Format.format(date24Format.parse(time));
+//            String singtime= date12Format.format(date24Format.parse(time));
+//
+//            sydntime(sydtime);
+//            tokytime(Toktime);
+//            londtime(londtime);
+//            singptime(singtime);
+//            nytime(nytime);
+//        } catch (Exception e){
+//            e.printStackTrace();
+//        }
+//    }
 
 }
 
